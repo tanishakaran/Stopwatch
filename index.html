@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Unique Stopwatch</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1> Stopwatch ⏱️ </h1>
+
+    <div class="circle">
+      <svg>
+        <circle cx="100" cy="100" r="90"></circle>
+        <circle cx="100" cy="100" r="90" id="progress"></circle>
+      </svg>
+      <div class="time" id="display">00:00:00.00</div>
+    </div>
+
+    <div class="buttons">
+      <button id="start">Start</button>
+      <button id="stop">Stop</button>
+      <button id="reset">Reset</button>
+    </div>
+
+    <button id="themeToggle">🌙</button>
+  </div>
+
+  <audio id="tickSound" src="tick.mp3" preload="auto"></audio>
+  <script src="script.js"></script>
+</body>
+</html>

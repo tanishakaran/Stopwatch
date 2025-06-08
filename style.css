@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: #111;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  transition: background 0.3s, color 0.3s;
+}
+
+.container {
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+  color: #0ff;
+  text-shadow: 0 0 10px #0ff;
+}
+
+.circle {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+}
+
+svg {
+  width: 200px;
+  height: 200px;
+  transform: rotate(-90deg);
+}
+
+circle {
+  fill: none;
+  stroke-width: 15;
+  stroke: #444;
+}
+
+#progress {
+  stroke: #0ff;
+  stroke-dasharray: 565;
+  stroke-dashoffset: 565;
+  transition: stroke-dashoffset 0.2s linear;
+}
+
+.time {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #0ff;
+  text-shadow: 0 0 10px #0ff;
+}
+
+.buttons {
+  margin-top: 30px;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 25px;
+  background: #0ff;
+  color: #000;
+  cursor: pointer;
+  box-shadow: 0 0 10px #0ff;
+  transition: background 0.3s, color 0.3s;
+}
+
+button:hover {
+  background: #000;
+  color: #0ff;
+}
+
+#themeToggle {
+  margin-top: 20px;
+  background: transparent;
+  color: #0ff;
+  font-size: 1.5rem;
+  border: none;
+}
+
+.light-mode {
+  background: #f5f5f5;
+  color: #111;
+}
+
+.light-mode h1 {
+  color: #0066ff;
+  text-shadow: none;
+}
+
+.light-mode .time {
+  color: #0066ff;
+  text-shadow: none;
+}
+
+.light-mode #progress {
+  stroke: #0066ff;
+}
+
+.light-mode button {
+  background: #0066ff;
+  color: #fff;
+  box-shadow: 0 0 10px #0066ff;
+}
