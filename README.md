@@ -26,11 +26,6 @@ making it not only functional but also an engaging user experience.
 | JavaScript | Core stopwatch logic and interactivity |
 
 ---
-![Stopwatch Screenshot]
-(stopwatch.jpg)
-
-
----
 
 ## 🎯 How to Use
 
